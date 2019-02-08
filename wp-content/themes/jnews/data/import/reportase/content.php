@@ -1,0 +1,978 @@
+<?php
+
+return array(
+
+    // image
+    'image' =>  array(
+	    'news1'    => 'http://jegtheme.com/asset/jnews/demo/default/travel1.jpg',
+	    'news2'    => 'http://jegtheme.com/asset/jnews/demo/default/fashion2.jpg',
+        
+        'ad_300x250' => 'http://jegtheme.com/asset/jnews/demo/default/ad_300x250.jpg',
+        'ad_345x345' => 'http://jegtheme.com/asset/jnews/demo/default/ad_345x345.jpg',
+        'ad_728x90' => 'http://jegtheme.com/asset/jnews/demo/default/ad_728x90.png',
+        'ad_300x600' => 'http://jegtheme.com/asset/jnews/demo/default/ad_300x600.jpg',
+        'ad_970x90' => 'http://jegtheme.com/asset/jnews/demo/default/ad_970x90.png'
+    ),
+
+    // create taxonomy
+    'taxonomy' => array(
+        'category' => array(
+            'business' =>
+                array(
+                    'title' =>'Business',
+                    'description' => 'You can add some category description here.'
+                ),
+            'entertainment' =>
+                array(
+                    'title' =>'Entertainment',
+                    'description' => 'You can add some category description here.'
+                ),
+                'gaming' =>
+                    array(
+                        'title' => 'Gaming',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'entertainment'
+                    ),
+                'movie' =>
+                    array(
+                        'title' => 'Movie',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'entertainment'
+                    ),
+                'music' =>
+                    array(
+                        'title' => 'Music',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'entertainment'
+                    ),
+                'sports' =>
+                    array(
+                        'title' => 'Sports',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'entertainment'
+                    ),
+            'lifestyle' =>
+                array(
+                    'title' =>'Lifestyle',
+                    'description' => 'You can add some category description here.'
+                ),
+                'fashion' =>
+                    array(
+                        'title' => 'Fashion',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'lifestyle'
+                    ),
+                'food' =>
+                    array(
+                        'title' => 'food',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'lifestyle'
+                    ),
+                'health' =>
+                    array(
+                        'title' => 'Health',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'lifestyle'
+                    ),
+                'travel' =>
+                    array(
+                        'title' => 'Travel',
+                        'description' => 'You can add some category description here.',
+                        'parent' => 'lifestyle'
+                    ),
+            'national' =>
+                array(
+                    'title' =>'National',
+                    'description' => 'You can add some category description here.'
+                ),
+            'politics' =>
+                array(
+                    'title' =>'Politics',
+                    'description' => 'You can add some category description here.'
+                ),
+            'science' =>
+                array(
+                    'title' =>'Science',
+                    'description' => 'You can add some category description here.'
+                ),
+            'tech' =>
+                array(
+                    'title' =>'Tech',
+                    'description' => 'You can add some category description here.'
+                ),
+            'world' =>
+                array(
+                    'title' =>'World',
+                    'description' => 'You can add some category description here.'
+                ),
+            
+        ),
+        'post_tag' => array(
+            'climate-change' => array(
+                'title' => 'Climate Change'
+            ),
+            'donald-trump' => array(
+                'title' => 'Donald Trump',
+            ),
+            'election-results' => array(
+                'title' => 'Election Results',
+            ),
+            'flat-earth' => array(
+                'title' => 'Flat Earth'
+            ),
+            'golden-globes' => array(
+                'title' => 'Golden Globes'
+            ),
+            'market-stories' => array(
+                'title' => 'Market Stories',
+            ),
+            'motogp-2017' => array(
+                'title' => 'MotoGP 2017'
+            ),
+            'mr-robot' => array(
+                'title' => 'Mr. Robot'
+            ),
+            'sillicon-valley' => array(
+                'title' => 'Sillicon Valley'
+            ),
+            'united-stated' => array(
+                'title' => 'United Stated',
+            ),
+            'white-house' => array(
+                'title' => 'White House'
+            ),
+        )
+    ),
+
+    // post & page
+    'post' => array(
+        'riots-report-shows-london-needs-to-maintain-police-numbers-says-mayor' => array(
+            'title' => "Riots Report Shows London Needs To Maintain Police Numbers, Says Mayor",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'business,national,politics,world',
+                'post_tag' => 'climate-change,election-results,flat-earth,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}')
+            )
+        ),
+        'trump-is-struggling-to-stay-calm-on-russia-one-morning-call-at-a-time' => array(
+            'title' => "Trump Is Struggling To Stay Calm On Russia, One Morning Call At A Time",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,national,politics',
+                'post_tag' => 'donald-trump,election-results,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}')
+            )
+        ),
+        'house-republicans-vote-to-end-rule-stopping-coal-mining-debris-from-being-dumped-in-streams' => array(
+            'title' => "Republican Senator Vital to Health Bill’s Passage Won’t Support It",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'business,fashion,lifestyle,national,politics',
+                'post_tag' => 'flat-earth,market-stories,motogp-2017,mr-robot,sillicon-valley,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}')
+            )
+        ),
+        'rap-group-call-out-publication-for-using-their-image-in-place-of-gang' => array(
+            'title' => "Rap group call out publication for using their image in place of 'gang'",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,fashion,music,travel',
+                'post_tag' => 'climate-change,donald-trump,election-results,market-stories,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:music:id}}')
+            )
+        ),
+        'barack-obama-and-family-visit-balinese-paddy-fields-during-vacation' => array(
+            'title' => "Barack Obama and Family Visit Balinese Paddy Fields During Vacation",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'business,fashion,lifestyle,politics,travel',
+                'post_tag' => 'climate-change,election-results,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}')
+            )
+        ),
+        'president-trump-threatens-to-send-u-s-troops-to-mexico-to-take-care-of-bad-hombres' => array(
+            'title' => "Melania Trump's Mail Suit Suggests Desire To Monetise First Lady Role",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'fashion,gaming,lifestyle,national,politics',
+                'post_tag' => 'donald-trump,election-results,golden-globes,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:fashion:id}}'),
+                'post_subtitle' => 'Victory has a thousand fathers, but defeat is an orphan.'
+            )
+        ),
+        'this-secret-room-in-mount-rushmore-is-having-a-moment' => array(
+            'title' => "This Secret Room In Mount Rushmore Is Having A Moment",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'lifestyle,national,politics,travel,world',
+                'post_tag' => 'election-results,flat-earth,mr-robot,sillicon-valley,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:national:id}}'),
+                'post_subtitle' => 'The best way to pay for a lovely moment is to enjoy it.'
+            )
+        ),
+        'betterment-moves-beyond-robo-advising-with-human-financial-planners' => array(
+            'title' => "Betterment Moves Beyond Robo-Advising With Human Financial Planners",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,science,tech',
+                'post_tag' => 'climate-change,donald-trump,election-results,golden-globes,motogp-2017,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:business:id}}')
+            )
+        ),
+        'a-digital-media-startup-growing-up-with-millennial-women' => array(
+            'title' => "A Digital Media Startup Growing Up With Millennial Women",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,food,science,tech',
+                'post_tag' => 'flat-earth,golden-globes,market-stories,mr-robot,sillicon-valley'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:tech:id}}'),
+                'post_subtitle' => 'The best way to pay for a lovely moment is to enjoy it.'
+            )
+        ),
+        'india-is-bringing-free-wi-fi-to-more-than-1000-villages-this-year' => array(
+            'title' => "India Is Bringing Free Wi-fi To More Than 1,000 Villages This Year",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'health,politics,science',
+                'post_tag' => 'climate-change,donald-trump,flat-earth,market-stories,motogp-2017,united-stated'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}'),
+                'post_subtitle' => 'The best way to pay for a lovely moment is to enjoy it.'
+            )
+        ),
+        'bill-gates-iconic-donkey-game-arrives-on-iphone-apple-watch' => array(
+            'title' => "Bill Gates' iconic donkey game arrives on iPhone, Apple Watch",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,entertainment,gaming,tech',
+                'post_tag' => 'donald-trump,golden-globes,mr-robot,sillicon-valley,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:tech:id}}'),
+                'post_subtitle' => 'Before anything else, preparation is the key to success.'
+            )
+        ),
+        'indonesias-largest-fleet-of-taxis-teams-up-to-beat-ride-hailing-apps' => array(
+            'title' => "Indonesia's Largest Fleet Of Taxis Teams Up To Beat Ride-hailing Apps",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'business,lifestyle,national,tech,travel',
+                'post_tag' => 'climate-change,flat-earth,market-stories,mr-robot,sillicon-valley'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:business:id}}')
+            )
+        ),
+        'trump-didnt-record-comey-white-house-tells-house-intel-panel' => array(
+            'title' => "Trump Didn't Record Comey, White House Tells House Intel Panel",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,national,politics,tech',
+                'post_tag' => 'climate-change,flat-earth,golden-globes,mr-robot,sillicon-valley,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}')
+            )
+        ),
+        'finland-has-an-education-system-the-other-country-should-learn-from' => array(
+            'title' => "Finland Has An Education System The Other Country Should Learn From",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'business,national,science,world',
+                'post_tag' => 'flat-earth,golden-globes,market-stories,motogp-2017,united-stated'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:science:id}}'),
+                'post_subtitle' => 'Before anything else, preparation is the key to success.'
+            )
+        ),
+        'johnny-depp-jokes-about-assassinating-trump-then-apologizes' => array(
+            'title' => "Johnny Depp Jokes About Assassinating Trump, Then Apologizes",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,fashion,lifestyle,movie,music',
+                'post_tag' => 'climate-change,donald-trump,flat-earth,motogp-2017,mr-robot,sillicon-valley'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:movie:id}}')
+            )
+        ),
+        'instagram-is-testing-photo-albums-because-nothing-is-sacred-anymore' => array(
+            'title' => "Uber's Turbulent Week: Kalanick Out, New Twist In Google Lawsuit",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,gaming,science,tech,travel',
+                'post_tag' => 'election-results,flat-earth,market-stories,mr-robot,sillicon-valley,united-stated'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:business:id}}'),
+                'post_subtitle' => 'Before anything else, preparation is the key to success.'
+            )
+        ),
+        '7-february-games-you-should-get-excited-about' => array(
+            'title' => "Uncharted: The Lost Legacy's Latest Demo Shows A Treasure-Hunting Duo In Sync",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,gaming,lifestyle,music,tech',
+                'post_tag' => 'donald-trump,election-results,market-stories,sillicon-valley,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:gaming:id}}')
+            )
+        ),
+        'make-yourself-feel-better-by-laughing-at-januarys-best-news-bloopers' => array(
+            'title' => "Hannah Donker talks being The Weeknd's love interest in 'Secrets'",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,fashion,lifestyle,movie,music,travel',
+                'post_tag' => 'golden-globes,market-stories,motogp-2017,mr-robot'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:music:id}}')
+            )
+        ),
+        'hong-kongs-stock-market-tells-the-story-of-chinas-growing-dominance' => array(
+            'title' => "Hong Kong’s Stock Market Tells the Story of China’s Growing Dominance",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,movie,national,politics,world',
+                'post_tag' => 'climate-change,election-results,market-stories,motogp-2017,sillicon-valley,united-stated'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:world:id}}')
+            )
+        ),
+        'five-london-tower-blocks-evacuated-over-cladding-safety-fears' => array(
+            'title' => "Five London Tower Blocks Evacuated Over Cladding Safety Fears",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'food,national,world',
+                'post_tag' => 'climate-change,golden-globes,motogp-2017,mr-robot,sillicon-valley,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:world:id}}')
+            )
+        ),
+        'these-edible-pick-up-sticks-let-you-play-with-your-food' => array(
+            'title' => "These Edible Pick-Up Sticks Let You Play With Your Food",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,health,lifestyle,sports',
+                'post_tag' => 'climate-change,flat-earth,market-stories,motogp-2017,mr-robot'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:food:id}}'),
+                'post_subtitle' => 'Self-belief and hard work will always earn you success.'
+            )
+        ),
+        'extreme-heat-waves-will-change-how-we-live-were-not-ready' => array(
+            'title' => "Extreme Heat Waves Will Change How We Live. We’re Not Ready",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'politics,science,world',
+                'post_tag' => 'climate-change,election-results,flat-earth,market-stories,mr-robot,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:world:id}}'),
+                'post_subtitle' => 'The best way to pay for a lovely moment is to enjoy it.'
+            )
+        ),
+        'new-campaign-wants-you-to-raise-funds-for-abuse-victims-by-ditching-the-razor' => array(
+            'title' => "New campaign wants you to raise funds for abuse victims by ditching the razor",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'health,science,world',
+                'post_tag' => 'climate-change,donald-trump,flat-earth,market-stories,sillicon-valley'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:world:id}}')
+            )
+        ),
+        'how-to-find-protests-in-your-city-when-you-dont-know-where-to-start' => array(
+            'title' => "How To Find Protests In Your City When You Don't Know Where To Start",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'food,national,politics,travel',
+                'post_tag' => 'donald-trump,election-results,golden-globes,market-stories,mr-robot,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:national:id}}')
+            )
+        ),
+        'trump-may-special-relationship-gets-special-treatment-in-the-streets-of-london' => array(
+            'title' => "Trump-May Special Relationship Gets Special Treatment In The Streets of London",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'business,health,movie,music,politics',
+                'post_tag' => 'donald-trump,election-results,market-stories,motogp-2017,mr-robot,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:politics:id}}')
+            )
+        ),
+        'gopros-karma-drone-is-back-on-sale-after-design-flaw-made-them-fall-out-of-the-sky' => array(
+            'title' => "Could Cristiano Ronaldo really be about to leave Real Madrid?",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'food,gaming,movie,sports',
+                'post_tag' => 'donald-trump,flat-earth,golden-globes,mr-robot,sillicon-valley,united-stated',
+                'post_format' => 'post-format-video'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:sports:id}}'),
+                'post_subtitle' => 'Before anything else, preparation is the key to success.',
+                '_format_video_embed' => 'https://www.youtube.com/watch?v=pSPESZryb-c'
+            )
+        ),
+        'of-course-this-novelty-final-fantasy-fork-is-an-oversized-sword-replica' => array(
+            'title' => "How The Premier League Became A Dream Destination For Young Brazilians",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'entertainment,fashion,health,lifestyle,movie,sports',
+                'post_tag' => 'climate-change,donald-trump,election-results,market-stories,motogp-2017,united-stated'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:sports:id}}'),
+                'post_subtitle' => 'Victory has a thousand fathers, but defeat is an orphan.'
+            )
+        ),
+        'nike-invented-self-lacing-sneakers-because-the-future-is-now' => array(
+            'title' => "Nike Invented Self-Lacing Sneakers Because the Future Is Now",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'fashion,gaming,lifestyle,sports',
+                'post_tag' => 'climate-change,flat-earth,golden-globes,motogp-2017,mr-robot'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:fashion:id}}')
+            )
+        ),
+        'trump-attends-the-return-of-the-remains-of-the-navy-seal-who-died-in-yemen' => array(
+            'title' => "British Police Warn Drug Users Of “Extra Strong, IKEA Branded” Ecstasy Pills",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'fashion,gaming,national,sports,travel',
+                'post_tag' => 'climate-change,donald-trump,election-results,flat-earth,golden-globes,motogp-2017,mr-robot,sillicon-valley'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:national:id}}')
+            )
+        ),
+        'the-chainsmokers-actually-make-a-great-nickelback-cover-band' => array(
+            'title' => "The Chainsmokers Actually Make a Great Nickelback Cover Band",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,fashion,health,lifestyle,music,science',
+                'post_tag' => 'climate-change,golden-globes,market-stories,motogp-2017,mr-robot'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:music:id}}')
+            )
+        ),
+        'j-k-rowling-is-shutting-down-readers-who-burned-all-their-harry-potter-books' => array(
+            'title' => "Obama Wants To Visit Ubud On Low-key Bali Vacation: Bali Official",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news1',
+            'taxonomy' => array(
+                'category' => 'fashion,gaming,lifestyle,science,travel,world',
+                'post_tag' => 'donald-trump,election-results,golden-globes,sillicon-valley,united-stated,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:world:id}}'),
+                'post_subtitle' => 'Self-belief and hard work will always earn you success.'
+            )
+        ),
+        'the-scary-reason-healthy-people-die-after-an-er-visit' => array(
+            'title' => "New York Newest Vegan Spot: No Shade From Us, Shady Shack Is On Point",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'food,health,lifestyle,science',
+                'post_tag' => 'golden-globes,motogp-2017,sillicon-valley,white-house'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:food:id}}')
+            )
+        ),
+        'watch-justin-timberlakes-cry-me-a-river-come-to-life-in-mesmerizing-dance' => array(
+            'title' => "Watch Justin Timberlake's 'Cry Me a River' Come to Life in Mesmerizing Dance",
+            'content' => 'post2.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,gaming,movie,music,science',
+                'post_tag' => 'climate-change,flat-earth,golden-globes,motogp-2017,sillicon-valley'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:music:id}}')
+            )
+        ),
+        'lady-gaga-pulled-off-one-of-the-best-halftime-shows-ever' => array(
+            'title' => "Lady Gaga Pulled Off One of the Best Halftime Shows Ever",
+            'content' => 'post1.txt',
+            'post_type' => 'post',
+            'featured_image' => 'news2',
+            'taxonomy' => array(
+                'category' => 'entertainment,fashion,lifestyle,music,travel',
+                'post_tag' => 'flat-earth,golden-globes,market-stories,motogp-2017,mr-robot,united-stated',
+                'post_format' => 'post-format-video'
+            ),
+            'metabox' => array(
+                'jnews_primary_category' => array('id' => '{{category:music:id}}'),
+                '_format_video_embed' => 'https://www.youtube.com/watch?v=dMTKnO34lCE'
+            )
+        ),
+
+        // page
+        'contact' => array(
+            'title' => 'Contact',
+            'content' => 'contact.txt',
+            'post_type' => 'page',
+            'metabox' => array(
+                'jnews_single_page' => array(
+                    'layout' => 'no-sidebar',
+                )
+            )
+        ),
+    ),
+
+    // menu location
+    'menu_location' => array(
+        'main-navigation' => array(
+            'title' => 'Main Navigation',
+            'location' => 'navigation'
+        ),
+        'mobile-navigation' => array(
+            'title' => 'Mobile Navigation',
+            'location' => 'mobile_navigation'
+        ),
+        'footer-navigation' => array(
+            'title' => 'Footer Navigation',
+            'location' => 'footer_navigation'
+        ),
+    ),
+
+    // menu it self
+    'menu' => array(
+
+        // Main Menu
+        'world' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'World',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:world:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'politics' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Politics',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:politics:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'business' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Business',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:business:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'science' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Science',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:science:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'tech' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Tech',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:tech:id}}',
+                'menu-item-status' => 'publish'
+            ),
+            'metabox' => array(
+                'menu_item_jnews_mega_menu' => array(
+                    'type' => 'category_2',
+                    'category' => '{{category:tech:id}}',
+                    'number' => 6,
+                    'trending_tag' => '{{taxonomy:post_tag:sillicon-valley:id}},{{taxonomy:post_tag:climate-change:id}},{{taxonomy:post_tag:election-results:id}},{{taxonomy:post_tag:flat-earth:id}},{{taxonomy:post_tag:golden-globes:id}},{{taxonomy:post_tag:motogp-2017:id}},{{taxonomy:post_tag:mr-robot:id}}',
+                ),
+            )
+        ),
+        'entertainment' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Entertainment',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:entertainment:id}}',
+                'menu-item-status' => 'publish'
+            ),
+            'metabox' => array(
+                'menu_item_jnews_mega_menu' => array(
+                    'type' => 'category_1',
+                    'category' => '{{category:entertainment:id}}',
+                    'number' => 9
+                ),
+            )
+        ),
+        'lifestyle' => array(
+            'location' => 'main-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Lifestyle',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:lifestyle:id}}',
+                'menu-item-status' => 'publish'
+            ),
+            'metabox' => array(
+                'menu_item_jnews_mega_menu' => array(
+                    'type' => 'category_2',
+                    'category' => '{{category:lifestyle:id}}',
+                    'number' => 10,
+                    'trending_tag' => '{{taxonomy:post_tag:golden-globes:id}},{{taxonomy:post_tag:mr-robot:id}},{{taxonomy:post_tag:motogp-2017:id}},{{taxonomy:post_tag:climate-change:id}},{{taxonomy:post_tag:flat-earth:id}}',
+                ),
+            )
+        ),
+
+        // Footer & Topbar Menu
+        'about' => array(
+            'location' => 'footer-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'About',
+                'menu-item-type' => 'custom',
+                'menu-item-url' => '#',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'advertise' => array(
+            'location' => 'footer-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Advertise',
+                'menu-item-type' => 'custom',
+                'menu-item-url' => '#',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'careers' => array(
+            'location' => 'footer-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Careers',
+                'menu-item-type' => 'custom',
+                'menu-item-url' => '#',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'contact' => array(
+            'location' => 'footer-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Contact',
+                'menu-item-type' => 'post_type',
+                'menu-item-object' => 'page',
+                'menu-item-object-id' => '{{post:contact:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+
+
+        // Mobile Menu
+        'home-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Home',
+                'menu-item-type' => 'post_type',
+                'menu-item-object' => 'page',
+                'menu-item-object-id' => '{{post:home-1:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'politics-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Politics',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:politics:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'world-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'World',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:world:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'business-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Business',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:business:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'science-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Science',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:science:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'national-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'National',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:national:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'entertainment-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Entertainment',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:entertainment:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+            'gaming-mobile' => array(
+                'location' => 'mobile-navigation',
+                'menu-item-data' => array(
+                    'menu-item-title' => 'Gaming',
+                    'menu-item-type' => 'taxonomy',
+                    'menu-item-object' => 'category',
+                    'menu-item-object-id' => '{{category:gaming:id}}',
+                    'menu-item-parent-id' => '{{menu:news-mobile:id}}',
+                    'menu-item-status' => 'publish'
+                )
+            ),
+            'movie-mobile' => array(
+                'location' => 'mobile-navigation',
+                'menu-item-data' => array(
+                    'menu-item-title' => 'Movie',
+                    'menu-item-type' => 'taxonomy',
+                    'menu-item-object' => 'category',
+                    'menu-item-object-id' => '{{category:movie:id}}',
+                    'menu-item-parent-id' => '{{menu:news-mobile:id}}',
+                    'menu-item-status' => 'publish'
+                )
+            ),
+            'music-mobile' => array(
+                'location' => 'mobile-navigation',
+                'menu-item-data' => array(
+                    'menu-item-title' => 'Music',
+                    'menu-item-type' => 'taxonomy',
+                    'menu-item-object' => 'category',
+                    'menu-item-object-id' => '{{category:music:id}}',
+                    'menu-item-parent-id' => '{{menu:news-mobile:id}}',
+                    'menu-item-status' => 'publish'
+                )
+            ),
+            'sports-mobile' => array(
+                'location' => 'mobile-navigation',
+                'menu-item-data' => array(
+                    'menu-item-title' => 'Sports',
+                    'menu-item-type' => 'taxonomy',
+                    'menu-item-object' => 'category',
+                    'menu-item-object-id' => '{{category:sports:id}}',
+                    'menu-item-parent-id' => '{{menu:news-mobile:id}}',
+                    'menu-item-status' => 'publish'
+                )
+            ),
+        'fashion-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Fashion',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:fashion:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'lifestyle-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Lifestyle',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:lifestyle:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'travel-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Travel',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:travel:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'tech-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Tech',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:tech:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'health-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Health',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:health:id}}',
+                'menu-item-status' => 'publish'
+            )
+        ),
+        'food-mobile' => array(
+            'location' => 'mobile-navigation',
+            'menu-item-data' => array(
+                'menu-item-title' => 'Food',
+                'menu-item-type' => 'taxonomy',
+                'menu-item-object' => 'category',
+                'menu-item-object-id' => '{{category:food:id}}',
+                'menu-item-status' => 'publish'
+            )
+        )
+
+    ),
+
+    'widget_position' => array(
+    ),
+
+    'widget' => array(
+        'widget.json',
+    ),
+
+    'customizer' => array(
+        'style.json',
+    ),
+
+    'plugin' => array(
+        'contact-form-7',
+        'jnews-breadcrumb',
+        'jnews-gallery',
+        'jnews-jsonld',
+        'jnews-meta-header',
+        'jnews-social-login',
+        'jnews-social-share',
+        'jnews-split',
+        'jnews-view-counter',
+        'jnews-weather',
+        'mailchimp-for-wp'
+    )
+
+);

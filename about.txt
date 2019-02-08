@@ -1,0 +1,8 @@
+WordPress Azure Web App Service - jnews
+
+This is a fork of the official WordPress Azure App Service (https://github.com/azureappserviceoss/wordpress-azure)
+
+Changes:
+- Includes jnews (jnews.io) theme
+- Adjusted .user.ini to increase file size limit from 50MB to 128MB to accomodate for bigger themes
+- Added this about.txt file

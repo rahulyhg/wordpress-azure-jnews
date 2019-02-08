@@ -1,0 +1,77 @@
+{
+  "default-sidebar": {
+    "jnews_social_counter-3": {
+      "title": "Follow Us",
+      "column": "col3",
+      "style": "light",
+      "fb_id": "1708153456106457",
+      "fb_secret": "ae408213fb9a2e29d3ad858e03ec5a75",
+      "fb_key": "1708153456106457|LBeqPdQFTJXpeFL3sPex1LQBMVY",
+      "gg_key": "AIzaSyCNRPgcByJDdhhZZRZ0AEyUnZ9lqmlBrvE",
+      "bh_key": "t2wwIJCdYCWCdAdPHwef3hGvcx8ztA8o",
+      "twitch_key": "",
+      "linkedin_id": "",
+      "linkedin_secret": "",
+      "linkedin_code": "",
+      "linkedin_key": "",
+      "vk_id": "",
+      "rss_count": "",
+      "account": "%5B%7B%22social_icon%22%3A%22facebook%22%2C%22social_url%22%3A%22jegtheme%22%7D%2C%7B%22social_icon%22%3A%22twitter%22%2C%22social_url%22%3A%22https%3A%2F%2Ftwitter.com%2Fjegtheme%22%7D%2C%7B%22social_icon%22%3A%22google-plus%22%2C%22social_url%22%3A%22https%3A%2F%2Fplus.google.com%2F%2Benvato%22%7D%2C%7B%22social_icon%22%3A%22behance%22%2C%22social_url%22%3A%22https%3A%2F%2Fwww.behance.net%2Fjegtheme%22%7D%2C%7B%22social_icon%22%3A%22instagram%22%2C%22social_url%22%3A%22https%3A%2F%2Fwww.instagram.com%2Fenvato%2F%22%7D%2C%7B%22social_icon%22%3A%22dribbble%22%2C%22social_url%22%3A%22https%3A%2F%2Fdribbble.com%2Fenvato%22%7D%2C%7B%22social_icon%22%3A%22youtube%22%2C%22social_url%22%3A%22http%3A%2F%2Fwww.youtube.com%2Fuser%2FEnvato%22%7D%2C%7B%22social_icon%22%3A%22flickr%22%2C%22social_url%22%3A%22https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fwe-are-envato%2F%22%7D%2C%7B%22social_icon%22%3A%22soundcloud%22%2C%22social_url%22%3A%22https%3A%2F%2Fsoundcloud.com%2Fdialogdinihari%22%7D%5D",
+      "second_title": "",
+      "header_url": "",
+      "header_type": "heading_6",
+      "header_background": "",
+      "header_text_color": ""
+    }
+  },
+  "footer-widget-1": {
+    "jnews_about-3": {
+      "title": "Newsletter",
+      "aboutimg": "",
+      "aboutimgretina": "",
+      "aboutname": "",
+      "aboutoccupation": "",
+      "aboutdesc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br/><a class=\"btn btn-default\" href=\"#\">SUBSCRIBE</a>",
+      "signature": "",
+      "signatureretina": "",
+      "second_title": "",
+      "header_url": "",
+      "header_background": "",
+      "header_text_color": ""
+    }
+  },
+  "footer-widget-2": {
+    "categories-3": {
+      "title": "Category",
+      "second_title": "",
+      "header_url": "",
+      "header_background": "",
+      "header_text_color": ""
+    }
+  },
+  "footer-widget-3": {
+    "meta-3": {
+      "title": "Site Links",
+      "second_title": "",
+      "header_url": "",
+      "header_background": "",
+      "header_text_color": ""
+    }
+  },
+  "footer-widget-4": {
+    "jnews_about-2": {
+      "title": "About Us",
+      "aboutimg": "",
+      "aboutimgretina": "",
+      "aboutname": "",
+      "aboutoccupation": "",
+      "aboutdesc": "We bring you the best Premium WordPress Themes that perfect for news, magazine, personal blog, etc. Check our landing page for details.",
+      "signature": "",
+      "signatureretina": "",
+      "second_title": "",
+      "header_url": "",
+      "header_background": "",
+      "header_text_color": ""
+    }
+  }
+}
